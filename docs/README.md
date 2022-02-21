@@ -1,5 +1,5 @@
 # 习武三年，今日出山只身入江湖
-![first](../docs/assets/hero_two.png)
+![first](./assets/hero_two.png)
 为此间江湖年少 偏爱纵横天下 恩仇趁年华轻剑快马 红尘未破也无甚牵挂 只恋生杀 醉里论道 醒时折花 ——无比 《明月天涯》
 
 2022年2月8日，这一天突然想在前端的江湖中留下自己的足迹。
@@ -16,7 +16,7 @@
 ### JavaScript
 
 js 称得上咱们前端的内功了，内功雄厚，所有招式都能信手拈来。下面介绍我认为比较重要的几个点，也是武林前辈喜欢考察的地方。
-![like](../docs/assets/hero_one.png)
+![like](./assets/hero_one.png)
 
 - [内置类型](./components/js/types.md)
 
