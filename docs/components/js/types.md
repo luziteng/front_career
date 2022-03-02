@@ -111,15 +111,35 @@ JavaScript 的 String 类型用于表示文本数据。它是一组 16 位无符
 具有符号数据类型的值可以称为“符号值”。在 JavaScript 运行时环境中，通过调用函数创建符号值，该函数Symbol动态生成匿名的唯一值。符号可以用作对象属性。
 符号可以有一个可选的描述，但仅用于调试目的。
 
-以上是MDN官方描述，这句话我读了几遍也没摸到它的精髓，通过查资料才对这`Symbol`类型有个大概的理解。咱们结合代码去了解它:
+以上是MDN官方描述，这句话我读了几遍也没摸到它的精髓，（本少侠认为对于陌生的招式，最基本的要求就是知道它能有什么用）通过查资料才对这`Symbol`类型有个大概的理解。咱们结合代码去了解它:
 
 > 每个从Symbol()返回的symbol值都是唯一的
 
 ```
 let Sym1 = Symbol("Sym")
 let Sym2 = Symbol("Sym")
-console.log(Sym1 === Sym2) // returns "false"
+let Sym3 = Symbol(24)
+console.log(Sym1 === Sym2) // return "false"
+console.log(Sym3 === 24) // return false
+console.log(Sym3.toString()) // "Symbool(foo)"
 ```
+
+> Symbol 不会被自动转换为字符串
+
+JavaScript 中的大多数值都支持字符串的隐式转换，Symbol 比较特殊，它不会被自动转换。
+这是一种防止混乱的“语言保护”，因为字符串和 Symbol 有本质上的不同，不应该意外地将它们转换成另一个。
+如果我们真的想显示一个 Symbol，我们需要在它上面调用 .toString()
+或者获取 symbol.description 属性，只显示描述（description）
+
+```
+let name = Symbol('kuba')
+alert(name) // 类型错误：无法将 Symbol 值转换为字符串。
+alert(name.toString()) // Symbol(name), 
+alert(name.description)// kuba
+```
+
+> 一个symbol值**能作为对象属性的标识符** —— 这是该数据类型仅有的目的
+
 
 
 
@@ -127,3 +147,4 @@ console.log(Sym1 === Sym2) // returns "false"
 
 - [JavaScript 深入了解基本类型和引用类型的值](https://www.runoob.com/w3cnote/javascript-basic-types-and-reference-types.html)
 - [MDN:JavaScript 数据类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)
+- [Symbol类型](https://zhuanlan.zhihu.com/p/183874695)
