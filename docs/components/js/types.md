@@ -127,8 +127,11 @@ console.log(Sym3.toString()) // "Symbool(foo)"
 > Symbol 不会被自动转换为字符串
 
 JavaScript 中的大多数值都支持字符串的隐式转换，Symbol 比较特殊，它不会被自动转换。
+
 这是一种防止混乱的“语言保护”，因为字符串和 Symbol 有本质上的不同，不应该意外地将它们转换成另一个。
+
 如果我们真的想显示一个 Symbol，我们需要在它上面调用 .toString()
+
 或者获取 symbol.description 属性，只显示描述（description）
 
 ```
@@ -140,9 +143,11 @@ alert(name.description)// kuba
 
 > 一个symbol值**能作为对象属性的标识符** —— 这是该数据类型仅有的目的
 
+## Object
 
+> Object 是 JavaScript 的一种 数据类型 。它用于存储各种键值集合和更复杂的实体。Objects 可以通过 Object() 构造函数或者使用 对象字面量 的方式创建
 
-
+在这里先不对 Object 数据类型进行详细介绍。有一篇详细的篇幅介绍 Object类型
 ## 参考文档
 
 - [JavaScript 深入了解基本类型和引用类型的值](https://www.runoob.com/w3cnote/javascript-basic-types-and-reference-types.html)
