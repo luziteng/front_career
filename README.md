@@ -7,4 +7,10 @@
 ## 框架使用
 本项目基于docsify构建，这里不做过多阐述，有兴趣的小伙伴可以去看看:point_right::point_right:[docify官方文档](https://docsify.js.org/#/zh-cn/quickstart?id=%e5%88%9d%e5%a7%8b%e5%8c%96%e9%a1%b9%e7%9b%ae),本少侠还是很推荐这款框架的:sunglasses::sunglasses:。
 
+### 本地预览
+
+通过运行 docsify serve 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000 。
+
+`docsify serve docs`
+
 <font color=#bc58bc>温馨提示：</font>推荐大家[在线阅读](https://luziteng.github.io/kuba-md.github.io/)在线阅读，效果更佳哦
