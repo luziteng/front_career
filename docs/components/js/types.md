@@ -148,8 +148,10 @@ alert(name.description)// kuba
 > Object 是 JavaScript 的一种 数据类型 。它用于存储各种键值集合和更复杂的实体。Objects 可以通过 Object() 构造函数或者使用 对象字面量 的方式创建
 
 在这里先不对 Object 数据类型进行详细介绍。有一篇详细的篇幅介绍 Object类型
+
 ## 参考文档
 
 - [JavaScript 深入了解基本类型和引用类型的值](https://www.runoob.com/w3cnote/javascript-basic-types-and-reference-types.html)
 - [MDN:JavaScript 数据类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)
 - [Symbol类型](https://zhuanlan.zhihu.com/p/183874695)
+- [Sumbol(MDN解析)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
